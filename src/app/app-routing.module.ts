@@ -4,12 +4,11 @@ import {RadioNgModelComponent} from './component/radio-ng-model/radio-ng-model.c
 import {SelectOverviewComponent} from './component/select-overview/select-overview.component';
 
 const routes: Routes = [
-  { path: 'heroes', component: RadioNgModelComponent },
-  { path: 'food', component: SelectOverviewComponent },
-  { path: '',
-    redirectTo: '/heroes',
-    pathMatch: 'full'
-  },
+  { path: 'heroes',
+    component: RadioNgModelComponent ,
+    children: [
+      { path: 'food', component: SelectOverviewComponent }
+      ]}
 ];
 
 @NgModule({
