@@ -9,7 +9,8 @@ import {
   MatInputModule,
   MatSidenavModule,
   MatRadioModule,
-  MatSelectModule
+  MatSelectModule,
+  MatSlideToggleModule
 } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
@@ -28,6 +29,7 @@ import { FormsModule } from '@angular/forms';
     MatSidenavModule,
     MatRadioModule,
     MatSelectModule,
+    MatSlideToggleModule,
     // Forms
     FormsModule]
 })

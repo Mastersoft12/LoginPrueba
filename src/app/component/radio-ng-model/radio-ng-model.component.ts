@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-radio-ng-model',
@@ -15,9 +16,14 @@ export class RadioNgModelComponent implements OnInit {
     'Autumn',
   ];
 
-  constructor() { }
+  constructor( private _router: Router) { }
 
   ngOnInit() {
+  }
+
+  clickMe() {
+    console.log('Hola');
+    this._router.navigate([`/slide`]);
   }
 
 }
